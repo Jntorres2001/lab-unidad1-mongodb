@@ -1,0 +1,7 @@
+// Archivo: src/03-query/find_all.mongodb
+// --------------------------------------------
+// Consulta 1: Mostrar todos los productos
+// --------------------------------------------
+use('techstore');
+print("🔍 Mostrando todos los productos:");
+db.productos.find();

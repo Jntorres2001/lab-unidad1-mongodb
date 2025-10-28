@@ -1,0 +1,47 @@
+// Archivo: src/02-insert/insert.mongodb
+// --------------------------------------------
+// Inserción de documentos en la colección 'productos'
+// --------------------------------------------
+use('techstore');
+
+db.productos.insertMany([
+  {
+    nombre: "Samsung Galaxy S24",
+    sku: "SM123",
+    precio: 800,
+    stock: 25,
+    tipo_producto: "Smartphone",
+    fecha_creacion: new Date(),
+    especificaciones: {
+      pantalla: "6.1\" AMOLED",
+      ram_gb: 8
+    }
+  },
+  {
+    nombre: "Laptop HP Envy",
+    sku: "LAP123",
+    precio: 950,
+    stock: 15,
+    tipo_producto: "Laptop",
+    fecha_creacion: new Date(),
+    especificaciones: {
+      cpu: "Intel Core i7",
+      ram_gb: 16,
+      dimensiones: { alto_cm: 2.3, ancho_cm: 35, peso_kg: 1.8 }
+    }
+  },
+  {
+    nombre: "Monitor LG UltraWide",
+    sku: "MON123",
+    precio: 400,
+    stock: 12,
+    tipo_producto: "Monitor",
+    fecha_creacion: new Date(),
+    especificaciones: {
+      resolucion: "2560x1080",
+      tamaño_pulgadas: 29
+    }
+  }
+]);
+
+print("📦 Insertados 3 productos correctamente en 'productos'");

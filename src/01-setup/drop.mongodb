@@ -1,0 +1,13 @@
+// Archivo: src/01-setup/drop.mongodb
+// --------------------------------------------
+// Limpieza inicial para pruebas repetibles
+// --------------------------------------------
+
+// Seleccionar la base de datos
+use('techstore');
+
+// Eliminar colección 'productos' si existe
+db.productos.drop();
+
+// Confirmación visual
+print("🧹 Colección 'productos' eliminada (si existía)");

@@ -1,0 +1,10 @@
+// Archivo: src/03-query/projection_smartphone.mongodb
+// --------------------------------------------
+// Consulta 4: Mostrar solo nombre, precio y stock de los Smartphones
+// --------------------------------------------
+use('techstore');
+print("📱 Nombre, precio y stock de los smartphones:");
+db.productos.find(
+  { tipo_producto: "Smartphone" },
+  { nombre: 1, precio: 1, stock: 1, _id: 0 }
+);

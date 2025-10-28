@@ -1,0 +1,11 @@
+// Archivo: src/04-update/update_stock.mongodb
+// --------------------------------------------
+// Operación 1: Se vendió un Smartphone → reducir el stock en 1 unidad
+// --------------------------------------------
+use('techstore');
+print("🛒 Vendido un Smartphone, actualizando stock...");
+db.productos.updateOne(
+  { sku: "SM123" },
+  { $inc: { stock: -1 } }
+);
+print("✅ Stock de 'SM123' reducido en 1 unidad.");

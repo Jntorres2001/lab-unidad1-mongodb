@@ -1,0 +1,31 @@
+// Archivo: src/05-schema/validation.mongodb
+// --------------------------------------------
+// Validación del esquema para la colección 'productos'
+// Evita datos inconsistentes y garantiza tipos correctos
+// --------------------------------------------
+use('techstore');
+
+db.createCollection("productos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["nombre", "sku", "precio", "stock", "tipo_producto"],
+      properties: {
+        nombre: { bsonType: "string" },
+        sku: { bsonType: "string" },
+        precio: { bsonType: "number" },
+        stock: { bsonType: "number" },
+        tipo_producto: {
+          enum: ["Laptop", "Smartphone", "Monitor"],
+          description: "Debe ser un tipo válido"
+        },
+        especificaciones: {
+          bsonType: "object",
+          description: "Contiene atributos específicos del producto"
+        }
+      }
+    }
+  }
+});
+
+print("🧩 Validación JSON Schema creada para la colección 'productos'");

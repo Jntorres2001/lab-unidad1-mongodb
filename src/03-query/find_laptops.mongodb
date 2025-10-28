@@ -1,0 +1,7 @@
+// Archivo: src/03-query/find_laptops.mongodb
+// --------------------------------------------
+// Consulta 2: Mostrar solo los productos tipo 'Laptop'
+// --------------------------------------------
+use('techstore');
+print("💻 Mostrando productos tipo 'Laptop':");
+db.productos.find({ tipo_producto: "Laptop" });

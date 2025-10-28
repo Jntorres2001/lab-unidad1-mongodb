@@ -1,0 +1,10 @@
+// Archivo: src/01-setup/connection.mongodb
+// --------------------------------------------
+// Conexión e inicialización de la base de datos TechStore
+// --------------------------------------------
+
+// Cambia "techstore" por el nombre de tu base si es distinto
+use('techstore');
+
+// Confirmación visual en consola
+print("✅ Conectado a la base de datos 'techstore'");

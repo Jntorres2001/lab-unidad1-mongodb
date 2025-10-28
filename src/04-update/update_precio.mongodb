@@ -1,0 +1,11 @@
+// Archivo: src/04-update/update_precio.mongodb
+// --------------------------------------------
+// Operación 2: Subida de precio de la Laptop y registro de última revisión
+// --------------------------------------------
+use('techstore');
+print("💰 Actualizando precio y fecha de revisión de la Laptop...");
+db.productos.updateOne(
+  { sku: "LAP123" },
+  { $set: { precio: 1000, ultima_revision: new Date() } }
+);
+print("✅ Precio de la Laptop actualizado a 1000 y fecha registrada.");
