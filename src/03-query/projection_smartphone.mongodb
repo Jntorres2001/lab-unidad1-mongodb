@@ -8,3 +8,4 @@ db.productos.find(
   { tipo_producto: "Smartphone" },
   { nombre: 1, precio: 1, stock: 1, _id: 0 }
 );
+
