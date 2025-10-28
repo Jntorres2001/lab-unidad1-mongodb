@@ -1,7 +1,3 @@
-// Archivo: src/01-setup/drop.mongodb
-// --------------------------------------------
-// Limpieza inicial para pruebas repetibles
-// --------------------------------------------
 
 // Seleccionar la base de datos
 use('techstore');

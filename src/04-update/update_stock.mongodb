@@ -1,4 +1,4 @@
-// Archivo: src/04-update/update_stock.mongodb
+
 // --------------------------------------------
 // Operación 1: Se vendió un Smartphone → reducir el stock en 1 unidad
 // --------------------------------------------

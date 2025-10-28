@@ -1,5 +1,4 @@
-// Archivo: src/03-query/find_stock_precio.mongodb
-// --------------------------------------------
+//--------------------------------------------
 // Consulta 3: Mostrar productos con stock > 10 y precio < 1000
 // --------------------------------------------
 use('techstore');

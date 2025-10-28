@@ -1,4 +1,4 @@
-// Archivo: src/05-schema/validation.mongodb
+
 // --------------------------------------------
 // Validación del esquema para la colección 'productos'
 // Evita datos inconsistentes y garantiza tipos correctos

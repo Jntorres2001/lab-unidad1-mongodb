@@ -1,4 +1,4 @@
-// Archivo: src/03-query/projection_smartphone.mongodb
+
 // --------------------------------------------
 // Consulta 4: Mostrar solo nombre, precio y stock de los Smartphones
 // --------------------------------------------
